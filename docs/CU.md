@@ -20,7 +20,7 @@ Precondiciones: Humberto tiene una sesión administrativa activa. Los productos 
 3. Si el comprador se identifica como cliente registrado, Humberto lo vincula mediante CU-002. En caso contrario, continúa sin cliente asociado.
 4. Humberto elige efectivo, Yape o Plin. El sistema calcula el total con los precios del servicio y muestra los campos del método elegido.
 5. Humberto registra el monto recibido en efectivo o la referencia de la operación digital.
-6. El sistema valida los datos de pago y calcula el vuelto cuando corresponde.
+6. El sistema valida el monto recibido en efectivo o la referencia de la operación digital, según el método elegido, y calcula el vuelto cuando corresponde.
 7. El sistema guarda la cabecera y el detalle de la venta, registra la salida de inventario y descuenta el stock en una misma transacción.
 8. El sistema confirma el guardado y muestra el identificador de la venta.
 
@@ -33,7 +33,7 @@ Precondiciones: Humberto tiene una sesión administrativa activa. Los productos 
 | Se selecciona Yape o Plin | Registrar la referencia digital sin atribuirle una confirmación bancaria automática. |
 | La venta está vacía o contiene cantidades no válidas | Solicitar la corrección antes de continuar. |
 | Un producto no tiene stock suficiente | Identificar el producto y rechazar el intento actual. Humberto puede iniciar una nueva selección. |
-| Los datos de pago no son válidos | Solicitar la corrección del método o de sus datos antes de guardar. |
+| El monto recibido o la referencia digital no son válidos para el método elegido | Solicitar la corrección antes de guardar. |
 | Falla el guardado | Revertir la transacción y mostrar que la venta no fue confirmada. |
 
 Postcondición de éxito: quedan guardados la venta, su detalle y el movimiento de salida, con el stock actualizado.

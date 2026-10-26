@@ -2,9 +2,9 @@
 
 | Elemento | Formato | Ejemplo |
 |---|---|---|
-| Requisito del laboratorio | REQ-### | REQ-001 |
+| Requisito | REQ-### | REQ-001 |
 | Caso de uso | CU-### | CU-001 |
-| Clase | CLS-Nombre | CLS-NombreClase |
+| Clase | CLS-Nombre | CLS-Venta |
 | Prueba | PRU-### | PRU-001 |
 | Solicitud de cambio | CR-### | CR-001 |
 

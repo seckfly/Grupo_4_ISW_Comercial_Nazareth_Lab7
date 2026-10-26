@@ -1,6 +1,6 @@
 # Matriz de trazabilidad de Comercial Nazareth
 
-La matriz relaciona los cinco requisitos seleccionados con sus casos de uso y pruebas.
+La columna "¿Cubierto?" indica si el requisito está vinculado a un caso de uso, una clase y una prueba.
 
 | Requisito | Descripción | Caso de uso | Clase | Prueba | ¿Cubierto? |
 |---|---|---|---|---|---|
@@ -11,5 +11,3 @@ La matriz relaciona los cinco requisitos seleccionados con sus casos de uso y pr
 | REQ-015 | Mantener productos e inventario | CU-006 | Sin asociación | PRU-016 | No |
 
 Cobertura de pruebas documentadas: 5 de 5 requisitos (100 %).
-
-Trazabilidad completa entre requisito, caso de uso, clase y prueba: 0 de 5 requisitos (0 %).
