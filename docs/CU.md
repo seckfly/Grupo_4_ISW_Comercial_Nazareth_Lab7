@@ -1,11 +1,11 @@
 # Casos de uso de Comercial Nazareth
 
-| ID | ID de origen | Caso de uso | Actor | Requisitos relacionados | Estado de la especificación |
-|---|---|---|---|---|---|
-| CU-001 | CU01 | Registrar venta | Vendedor | REQ-001; utiliza REQ-007 y, cuando el comprador se identifica, REQ-010 | Desarrollada en este documento |
-| CU-002 | CU02 | Vincular cliente a la venta | Vendedor | REQ-010 | Pendiente de desarrollar |
-| CU-003 | CU03 | Consultar catálogo | Cliente registrado, Vendedor y Responsable de compras | REQ-007 | Pendiente de desarrollar |
-| CU-006 | CU06 | Gestionar inventario | Responsable de almacén | REQ-002, REQ-015 | Pendiente de desarrollar |
+| ID | Caso de uso | Actor | Requisitos relacionados | Estado de la especificación |
+|---|---|---|---|---|
+| CU-001 | Registrar venta | Vendedor | REQ-001; utiliza REQ-007 y, cuando el comprador se identifica, REQ-010 | Desarrollada en este documento |
+| CU-002 | Vincular cliente a la venta | Vendedor | REQ-010 | Pendiente de desarrollar |
+| CU-003 | Consultar catálogo | Cliente registrado, Vendedor y Responsable de compras | REQ-007 | Pendiente de desarrollar |
+| CU-006 | Gestionar inventario | Responsable de almacén | REQ-002, REQ-015 | Pendiente de desarrollar |
 
 ## CU-001: Registrar venta
 

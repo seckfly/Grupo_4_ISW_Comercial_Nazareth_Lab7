@@ -24,8 +24,6 @@ El alcance comprende cinco requisitos de venta, existencias, catálogo, vinculac
 - [Pruebas documentadas](pruebas/pruebas.md): seis pruebas diseñadas, pendientes de ejecución.
 - [Matriz de trazabilidad](matrices/trazabilidad.md): relaciones iniciales, pendientes de completar con las clases.
 
-El contenido se adaptó de la [documentación de Comercial Nazareth del laboratorio anterior](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth/tree/74344ebd747860ba2b207945680239feee46709f). La correspondencia con sus identificadores se conserva en los documentos.
-
 ## Trabajo pendiente
 
 - Completar CU-002, CU-003 y CU-006; elaborar el diagrama de clases en draw.io y su PNG, y completar la matriz antes de publicar la línea base v1.0.

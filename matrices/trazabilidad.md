@@ -1,6 +1,6 @@
 # Matriz de trazabilidad de Comercial Nazareth
 
-La matriz conserva las relaciones del proyecto anterior y utiliza la convención de identificadores del laboratorio 7. Las clases se incorporarán cuando se elabore el diagrama de clases.
+La matriz relaciona los cinco requisitos seleccionados con sus casos de uso y pruebas. Las clases se incorporarán cuando se elabore el diagrama de clases.
 
 | Requisito | Descripción | Caso de uso | Clase | Prueba | ¿Cubierto? |
 |---|---|---|---|---|---|
