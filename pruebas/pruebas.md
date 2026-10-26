@@ -1,7 +1,5 @@
 # Pruebas de Comercial Nazareth
 
-Los datos numéricos son datos de prueba para comprobar el comportamiento esperado.
-
 | ID | Requisito | Datos y procedimiento | Resultado esperado |
 |---|---|---|---|
 | PRU-001 | REQ-001 | Con una sesión administrativa activa, usar un producto activo con stock 10 y precio S/ 6,70. Registrar una venta de 3 unidades con datos de pago válidos. Repetir desde el estado inicial provocando un fallo de guardado. | En el primer caso se guardan la venta, el detalle y la salida de 3 unidades; el total es S/ 20,10 y el stock queda en 7. En el caso de fallo, no se confirma la venta ni quedan registros parciales; el stock permanece en 10. |
