@@ -20,15 +20,6 @@ El alcance comprende cinco requisitos de venta, existencias, catálogo, vinculac
 
 - [Convención de identificadores](docs/convencion-ids.md).
 - [Requisitos seleccionados](docs/SRS.md).
-- [Casos de uso](docs/CU.md): CU-001 desarrollado; CU-002, CU-003 y CU-006 identificados y pendientes de especificación.
-- [Pruebas documentadas](pruebas/pruebas.md): seis pruebas diseñadas, pendientes de ejecución.
-- [Matriz de trazabilidad](matrices/trazabilidad.md): relaciones iniciales, pendientes de completar con las clases.
-
-## Trabajo pendiente
-
-- Completar CU-002, CU-003 y CU-006; elaborar el diagrama de clases en draw.io y su PNG, y completar la matriz antes de publicar la línea base v1.0.
-- Registrar CR-001 con su análisis de impacto y decisión; aplicar el cambio en una rama y actualizar los documentos afectados.
-- Preparar el reporte de trazabilidad, realizar la revisión por pares mediante un Pull Request y publicar v1.1.
-- Preparar el PDF con objetivo, procedimiento, evidencias, análisis y conclusiones.
-
-La línea base v1.0 todavía no está publicada.
+- [Casos de uso](docs/CU.md).
+- [Pruebas documentadas](pruebas/pruebas.md).
+- [Matriz de trazabilidad](matrices/trazabilidad.md).

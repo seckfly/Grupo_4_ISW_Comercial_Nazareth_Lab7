@@ -1,6 +1,6 @@
 # Pruebas de Comercial Nazareth
 
-Las pruebas están diseñadas y pendientes de ejecución. Los datos numéricos son ejemplos para comprobar el comportamiento esperado, no registros de ventas del negocio.
+Los datos numéricos son datos de prueba para comprobar el comportamiento esperado.
 
 | ID | Requisito | Datos y procedimiento | Resultado esperado |
 |---|---|---|---|

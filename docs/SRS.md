@@ -17,5 +17,3 @@ Se seleccionaron cinco requisitos del proyecto para construir la trazabilidad de
 - Efectivo, Yape y Plin son métodos de pago registrados. La referencia de Yape o Plin no constituye una confirmación bancaria automática.
 - La alerta incluye el stock igual al mínimo. La condición de reposición del proyecto se mantiene separada: stock menor al mínimo y decisión de Humberto de reponer.
 - La venta, su detalle y el movimiento de inventario se confirman juntos. Ante un error, la transacción se revierte sin dejar cambios parciales.
-
-Los requisitos describen el comportamiento esperado. Este repositorio contiene documentos del laboratorio; su contenido no acredita que las funciones estén implementadas o que las pruebas se hayan ejecutado.

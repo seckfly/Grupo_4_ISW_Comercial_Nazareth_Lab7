@@ -10,4 +10,4 @@
 
 Cada identificador corresponde a un solo elemento. Se conserva cuando se modifica el contenido y no se reutiliza si el elemento se retira.
 
-PRU identifica una prueba documentada. Pull Request identifica la solicitud de integración de GitHub. Los nombres de clases y CR-001 se incorporarán cuando se desarrollen esas partes del laboratorio.
+PRU identifica una prueba documentada. Pull Request identifica la solicitud de integración de GitHub.
