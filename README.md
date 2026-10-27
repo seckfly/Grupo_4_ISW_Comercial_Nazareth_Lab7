@@ -24,3 +24,4 @@ El alcance comprende cinco requisitos de venta, existencias, catálogo, vinculac
 - [Diagrama de clases](modelos/clases.png), con su fuente editable [clases.drawio](modelos/clases.drawio).
 - [Pruebas documentadas](pruebas/pruebas.md).
 - [Matriz de trazabilidad](matrices/trazabilidad.md).
+- [Reporte de trazabilidad v1.1](reportes/reporte-v1.1.md).
