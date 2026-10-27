@@ -41,3 +41,85 @@ Postcondición de éxito: quedan guardados la venta, su detalle y el movimiento 
 Postcondición ante fallo de guardado: no quedan una venta parcial ni descuentos de stock correspondientes a una venta sin confirmar.
 
 CU-001 incluye CU-003. CU-002 extiende CU-001 cuando el comprador se identifica como cliente registrado.
+
+## CU-002: Vincular cliente a la venta
+
+Actor: Vendedor, rol desempeñado por Humberto Dávalos.
+
+Requisito relacionado: REQ-010.
+
+Relación: extiende CU-001 cuando el comprador se identifica como cliente registrado. La vinculación es opcional y no impide guardar la venta.
+
+Precondiciones: Humberto tiene una sesión administrativa activa y una venta en curso en CU-001. El comprador se identifica como cliente registrado.
+
+### Flujo principal
+1. Humberto busca al cliente registrado con los datos que proporciona el comprador.
+2. El sistema muestra el cliente que coincide.
+3. Humberto confirma que es el cliente indicado por el comprador.
+4. El sistema asocia el cliente a la venta en curso.
+5. El sistema devuelve el control a CU-001, que continúa con la elección del método de pago.
+
+### Alternativas y excepciones
+
+| Situación | Respuesta |
+|---|---|
+| El comprador no se identifica | CU-002 no se ejecuta. La venta continúa sin cliente asociado. |
+| El sistema no encuentra un cliente registrado con los datos indicados | Humberto repite la búsqueda o continúa la venta sin cliente asociado. |
+
+Postcondición de éxito: la venta en curso queda asociada a un cliente registrado. La vinculación no modifica los productos, el total ni el método de pago.
+
+Postcondición sin vinculación: la venta continúa sin cliente asociado y puede confirmarse.
+
+## CU-003: Consultar catálogo
+
+Actores: Cliente registrado, Vendedor y Responsable de compras.
+
+Requisito relacionado: REQ-007.
+
+Relación: CU-001 incluye CU-003.
+
+Precondiciones: hay productos registrados. Para guardar favoritos y listas, el cliente registrado tiene una sesión iniciada en el portal.
+
+### Flujo principal
+1. El actor ingresa el nombre del producto, elige una categoría, o ambos.
+2. El sistema busca los productos que coinciden.
+3. El sistema muestra cada coincidencia con su nombre, precio y disponibilidad.
+4. El cliente registrado guarda un producto en favoritos o en una lista.
+5. El sistema conserva la selección en el portal del cliente.
+
+### Alternativas y excepciones
+
+| Situación | Respuesta |
+|---|---|
+| La búsqueda no tiene coincidencias | El sistema indica que no se encontraron productos. |
+| El actor es el Vendedor o el Responsable de compras | Consulta precio y disponibilidad. Los favoritos y las listas pertenecen al portal del cliente registrado. |
+| El actor no es un cliente registrado | Puede consultar el catálogo, pero no guardar favoritos ni listas. |
+| CU-001 invoca la consulta | Humberto elige los productos y cantidades de la venta desde los resultados. |
+
+Postcondición de éxito: el actor ve los resultados con precio y disponibilidad. Si el cliente registrado guardó favoritos o listas, quedan conservados.
+
+## CU-006: Gestionar inventario
+
+Actor: Responsable de almacén, rol desempeñado por Humberto Dávalos.
+
+Requisitos relacionados: REQ-002 y REQ-015.
+
+Precondiciones: Humberto tiene una sesión administrativa activa con acceso autorizado para el mantenimiento de productos y los ajustes de existencias.
+
+### Flujo principal
+1. Humberto consulta las existencias.
+2. El sistema muestra las existencias y señala los productos activos cuyo stock es menor o igual al mínimo configurado.
+3. Humberto registra un producto con su precio y stock inicial, o actualiza el precio de un producto existente.
+4. Humberto realiza un ajuste de existencias sobre un producto.
+5. El sistema guarda el cambio, actualiza el stock y registra el ajuste en el historial.
+6. Humberto consulta el historial del ajuste.
+
+### Alternativas y excepciones
+
+| Situación | Respuesta |
+|---|---|
+| El stock de un producto activo es igual al mínimo configurado | El sistema lo señala en la alerta. |
+| Un producto inactivo tiene stock menor o igual al mínimo | El sistema no lo incluye en la alerta. |
+| El usuario no tiene acceso autorizado | El sistema rechaza el mantenimiento de productos y los ajustes, y no guarda cambios. |
+
+Postcondición de éxito: los productos, precios y existencias quedan actualizados, y cada ajuste queda en el historial.
