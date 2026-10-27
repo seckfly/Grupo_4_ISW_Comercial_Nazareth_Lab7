@@ -21,5 +21,6 @@ El alcance comprende cinco requisitos de venta, existencias, catálogo, vinculac
 - [Convención de identificadores](docs/convencion-ids.md).
 - [Requisitos seleccionados](docs/SRS.md).
 - [Casos de uso](docs/CU.md).
+- [Diagrama de clases](modelos/clases.png), con su fuente editable [clases.drawio](modelos/clases.drawio).
 - [Pruebas documentadas](pruebas/pruebas.md).
 - [Matriz de trazabilidad](matrices/trazabilidad.md).
