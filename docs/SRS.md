@@ -1,4 +1,4 @@
-# SRS de Comercial Nazareth
+# SRS de Comercial Nazareth (v1.1)
 
 Humberto Dávalos es el propietario y único trabajador del negocio y desempeña los roles internos del sistema. El cliente registrado utiliza el portal.
 
@@ -8,7 +8,7 @@ Humberto Dávalos es el propietario y único trabajador del negocio y desempeña
 | REQ-002 | El sistema debe mostrar las existencias y señalar los productos activos cuyo stock sea menor o igual al mínimo configurado. |
 | REQ-007 | El sistema debe permitir buscar productos por nombre y categoría, mostrar su precio y disponibilidad, y guardar favoritos y listas en el portal del cliente registrado. |
 | REQ-010 | El sistema debe permitir vincular un cliente registrado a la venta cuando el comprador se identifique y registrar la venta sin cliente asociado cuando no se identifique. |
-| REQ-015 | El sistema debe permitir registrar y actualizar productos, precios y stock inicial, y realizar ajustes autorizados de existencias conservando su historial. |
+| REQ-015 | El sistema debe permitir registrar y actualizar productos, precios y stock inicial, y realizar ajustes autorizados de existencias conservando su historial. Cada ajuste manual debe incluir un motivo con al menos un carácter distinto de espacios y conservarlo en el historial. Si el motivo está vacío o contiene únicamente espacios, el sistema debe solicitar su corrección sin modificar el stock ni registrar el ajuste. El ajuste, su motivo y la actualización del stock deben guardarse en una misma transacción. Esta condición del motivo no se aplica a las salidas generadas por ventas. |
 
 ## Reglas aplicables
 

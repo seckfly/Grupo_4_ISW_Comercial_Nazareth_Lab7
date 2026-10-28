@@ -4,7 +4,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="titulo" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontStyle=1;" value="Diagrama de clases - Comercial Nazareth (v1.0)" vertex="1">
+        <mxCell id="titulo" parent="1" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontStyle=1;" value="Diagrama de clases - Comercial Nazareth (v1.1)" vertex="1">
           <mxGeometry height="30" width="600" x="40" y="20" as="geometry" />
         </mxCell>
         <mxCell id="CLS-Cliente" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="CLS-Cliente" vertex="1">
@@ -58,14 +58,14 @@
         <mxCell id="CLS-MovimientoInventario" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="CLS-MovimientoInventario" vertex="1">
           <mxGeometry height="330" width="280" x="440" y="400" as="geometry" />
         </mxCell>
-        <mxCell id="CLS-MovimientoInventario-attrs" parent="CLS-MovimientoInventario" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- idMovimiento: int&lt;br&gt;- tipo: Salida | Ajuste&lt;br&gt;- cantidad: int&lt;br&gt;- fecha: datetime" vertex="1">
-          <mxGeometry height="88" width="280" y="26" as="geometry" />
+        <mxCell id="CLS-MovimientoInventario-attrs" parent="CLS-MovimientoInventario" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- idMovimiento: int&lt;br&gt;- tipo: Salida | Ajuste&lt;br&gt;- cantidad: int&lt;br&gt;- fecha: datetime&lt;br&gt;&lt;font color=&quot;#e69138&quot;&gt;- motivo: String [0..1]&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#e69138&quot;&gt;{obligatorio si tipo = Ajuste}&lt;/font&gt;" vertex="1">
+          <mxGeometry height="118" width="280" y="26" as="geometry" />
         </mxCell>
         <mxCell id="CLS-MovimientoInventario-sep" parent="CLS-MovimientoInventario" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
-          <mxGeometry height="8" width="280" y="114" as="geometry" />
+          <mxGeometry height="8" width="280" y="144" as="geometry" />
         </mxCell>
-        <mxCell id="CLS-MovimientoInventario-meths" parent="CLS-MovimientoInventario" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ registrarSalida(): void&lt;br&gt;+ registrarAjuste(): void&lt;br&gt;+ consultarHistorial(): MovimientoInventario[]" vertex="1">
-          <mxGeometry height="208" width="280" y="122" as="geometry" />
+        <mxCell id="CLS-MovimientoInventario-meths" parent="CLS-MovimientoInventario" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ registrarSalida(): void&lt;br&gt;&lt;font color=&quot;#e69138&quot;&gt;+ registrarAjuste(motivo: String): void&lt;/font&gt;&lt;br&gt;+ consultarHistorial(): MovimientoInventario[]&lt;br&gt;&lt;font color=&quot;#e69138&quot;&gt;+ validarMotivo(motivo: String): boolean&lt;/font&gt;" vertex="1">
+          <mxGeometry height="178" width="280" y="152" as="geometry" />
         </mxCell>
         <mxCell id="CLS-Producto" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="CLS-Producto" vertex="1">
           <mxGeometry height="330" width="280" x="840" y="400" as="geometry" />

@@ -1,4 +1,4 @@
-# Casos de uso de Comercial Nazareth
+# Casos de uso de Comercial Nazareth (v1.1)
 
 | ID | Caso de uso | Actor | Requisitos relacionados |
 |---|---|---|---|
@@ -110,9 +110,10 @@ Precondiciones: Humberto tiene una sesión administrativa activa con acceso auto
 1. Humberto consulta las existencias.
 2. El sistema muestra las existencias y señala los productos activos cuyo stock es menor o igual al mínimo configurado.
 3. Humberto registra un producto con su precio y stock inicial, o actualiza el precio de un producto existente.
-4. Humberto realiza un ajuste de existencias sobre un producto.
-5. El sistema guarda el cambio, actualiza el stock y registra el ajuste en el historial.
-6. Humberto consulta el historial del ajuste.
+4. Humberto indica el ajuste manual de existencias y su motivo.
+5. El sistema comprueba que el motivo contenga al menos un carácter distinto de espacios.
+6. El sistema guarda el ajuste y su motivo en el historial y actualiza el stock en una misma transacción.
+7. Humberto consulta el historial, que muestra el motivo de cada ajuste y conserva los registros anteriores.
 
 ### Alternativas y excepciones
 
@@ -121,5 +122,9 @@ Precondiciones: Humberto tiene una sesión administrativa activa con acceso auto
 | El stock de un producto activo es igual al mínimo configurado | El sistema lo señala en la alerta. |
 | Un producto inactivo tiene stock menor o igual al mínimo | El sistema no lo incluye en la alerta. |
 | El usuario no tiene acceso autorizado | El sistema rechaza el mantenimiento de productos y los ajustes, y no guarda cambios. |
+| El motivo está vacío o contiene únicamente espacios | El sistema solicita corregir el motivo. El stock permanece sin cambios y no se registra el ajuste. |
+| Falla el guardado del ajuste, su motivo o el stock | El sistema revierte la transacción. El stock y el historial conservan el estado anterior al intento. |
 
-Postcondición de éxito: los productos, precios y existencias quedan actualizados, y cada ajuste queda en el historial.
+Postcondición de éxito: los productos, precios y existencias quedan actualizados. Cada ajuste manual conserva su motivo en el historial, junto con los ajustes anteriores.
+
+La exigencia del motivo corresponde a los ajustes manuales de CU-006. Las salidas de inventario por ventas siguen el flujo de CU-001.
