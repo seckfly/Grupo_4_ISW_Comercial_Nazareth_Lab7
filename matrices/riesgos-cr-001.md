@@ -1,6 +1,6 @@
 # Riesgos asociados a CR-001
 
-Los niveles son estimaciones cualitativas para la aplicación del cambio, no incidencias observadas. Probabilidad e impacto se expresan como baja, media o alta.
+Probabilidad e impacto son estimaciones cualitativas para CR-001 y se expresan como baja, media o alta.
 
 | ID | Riesgo | Probabilidad | Impacto | Prevención | Contingencia |
 |---|---|---|---|---|---|
