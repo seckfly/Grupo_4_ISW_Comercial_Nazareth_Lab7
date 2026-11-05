@@ -30,12 +30,4 @@ El alcance comprende cinco requisitos de venta, existencias, catálogo, vinculac
 
 - [Impacto de CR-001](matrices/impacto-cr-001.md): alcance, tiempo y calidad/costo.
 - [Riesgos de CR-001](matrices/riesgos-cr-001.md): probabilidad, impacto y respuesta.
-- [Reporte de verificación de trazabilidad](reportes/trazabilidad-s12.md).
-
-Para actualizar el reporte después de cambiar algún artefacto, ejecutar desde la raíz del repositorio:
-
-```bash
-python3 scripts/verificar-trazabilidad.py
-```
-
-El script coteja los IDs de la matriz con SRS, casos de uso, diagrama editable y pruebas. La cobertura indica vínculos documentados; no representa ejecución de pruebas.
+- [Resumen de trazabilidad](reportes/trazabilidad-s12.md): relaciones entre requisitos, casos de uso, clases y pruebas documentadas.
